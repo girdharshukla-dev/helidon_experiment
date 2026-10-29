@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  host: 0.0.0.0
+app:
+    greeting: "Hello"
+
+db:
+  source: "jdbc"
+  connection:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+

@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:15.15-trixie
+    container_name: my_postgres
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: dispatch
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
