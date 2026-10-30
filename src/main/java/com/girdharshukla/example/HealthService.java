@@ -7,7 +7,8 @@ import io.helidon.webserver.http.ServerResponse;
 
 public class HealthService implements HttpService {
 
-    public record Status(String status){}
+    public record Status(String status) {
+    }
 
     private void health_check(ServerRequest request, ServerResponse resp) {
         resp.send(new Status("health ok"));
@@ -15,7 +16,7 @@ public class HealthService implements HttpService {
 
     @Override
     public void routing(HttpRules rules) {
-       rules.get("/check", this::health_check);
+        rules.get("/check", this::health_check);
     }
-    
+
 }

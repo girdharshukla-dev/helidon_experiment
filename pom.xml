@@ -97,6 +97,17 @@
             <artifactId>helidon-dbclient-jdbc</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>at.favre.lib</groupId>
+            <artifactId>bcrypt</artifactId>
+            <version>0.10.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.helidon.dbclient</groupId>
+            <artifactId>helidon-dbclient-hikari</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
